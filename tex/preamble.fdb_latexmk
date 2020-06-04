@@ -1,0 +1,15 @@
+# Fdb version 3
+["pdflatex"] 1591243830 "preamble.tex" "preamble.pdf" "preamble" 1591243830
+  "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty" 1480098815 8253 473e0e41f9adadb1977e8631b8f72ea6 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty" 1480098815 18425 5b3c0c59d76fac78978b5558e83c1f36 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1480098830 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def" 1485129666 58250 3792a9d2d1d664ee8c742498e295b051 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty" 1480098830 7031 4ca2945c73eec4e726c0da188fbbf50f ""
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "preamble.aux" 1591243830 8 a94a2480d3289e625eea47cd1b285758 ""
+  "preamble.tex" 1591243830 4991 a8d12d0c4cf18d18d03437732b08daad ""
+  (generated)
+  "preamble.log"
+  "preamble.pdf"
