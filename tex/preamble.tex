@@ -1,0 +1,171 @@
+
+\usepackage{hyperref}
+\usepackage{etex}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath}
+\usepackage{amsxtra}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{eucal}
+\usepackage[all]{xy}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{mathrsfs}
+\usepackage{subfiles}
+\usepackage{mathpazo}
+\usepackage{euler}
+\usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
+\usepackage{morefloats}
+\usepackage{mathdots}
+\usepackage{pdfpages}
+\usepackage{thm-restate}
+\usepackage[utf8]{inputenc}
+\usepackage{epigraph}
+\usepackage{csquotes}
+
+\graphicspath{ {images/} }
+
+
+\RequirePackage{color}
+\definecolor{myred}{rgb}{0.75,0,0}
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\definecolor{myblue}{rgb}{0,0,0.65}
+
+\usepackage{hyperref}
+\hypersetup{citecolor=blue}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{counterexample}[theorem]{Counterexample}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{goal}[theorem]{Goal}
+\newtheorem{conjecture}[theorem]{Conjecture} 
+\newtheorem{warn}[theorem]{Warning}
+\newtheorem{fact}[theorem]{Fact}
+\theoremstyle{remark}
+\newtheorem{notation}[theorem]{Notation}
+\numberwithin{equation}{section}
+  
+\newcommand\nc{\newcommand}
+\nc\on{\operatorname}
+\nc\renc{\renewcommand}
+\newcommand\se{\section}
+\newcommand\ssec{\subsection}
+\newcommand\sssec{\subsubsection}
+\newcommand\bn{{\mathbb N}}
+\newcommand\bc{{\mathbb C}}
+\newcommand\br{{\mathbb R}}
+\newcommand\bq{{\mathbb Q}}
+\newcommand\bp{{\mathbb P}}
+\newcommand\CF{{\mathcal F}}
+\newcommand\bz{{\mathbb Z}}
+\newcommand\bg{{\mathbb G}}
+\newcommand\ba{{\mathbb A}}
+\newcommand\bt{{\mathbb T}}
+\newcommand\fa{{\mathfrak a}}
+\newcommand\fp{{\mathfrak p}}
+\newcommand\fq{{\mathfrak q}}
+\newcommand\fm{{\mathfrak m}}
+\newcommand\so{{\mathscr O}}
+\newcommand\sg{{\mathscr G}}
+
+
+\newcommand\sca{\mathscr A}
+\newcommand\scb{\mathscr B}
+\newcommand\scc{\mathscr C}
+\newcommand\scd{\mathscr D}
+\newcommand\sce{\mathscr E}
+\newcommand\scf{\mathscr F}
+\newcommand\scg{\mathscr G}
+\newcommand\sch{\mathscr H}
+\newcommand\sci{\mathscr I}
+\newcommand\scj{\mathscr J}
+\newcommand\sck{\mathscr K}
+\newcommand\scl{\mathscr L}
+\newcommand\scm{\mathscr M}
+\newcommand\scn{\mathscr N}
+\newcommand\sco{\mathscr O}
+\newcommand\scp{\mathscr P}
+\newcommand\scq{\mathscr Q}
+\newcommand\scs{\mathscr S}
+\newcommand\sct{\mathscr T}
+\newcommand\scu{\mathscr U}
+\newcommand\scv{\mathscr V}
+\newcommand\scw{\mathscr W}
+\newcommand\scx{\mathscr X}
+\newcommand\scy{\mathscr Y}
+\newcommand\scz{\mathscr Z}
+
+\newcommand \ra{\rightarrow}
+\newcommand \dra{\dashrightarrow}
+\newcommand{\id}{\mathrm{id}}
+\newcommand\im{\text{im }}
+\newcommand\coker{\text{coker}}
+\newcommand \spec{\text{Spec }}
+\newcommand \proj{\text{Proj }}
+\newcommand \ul{\underline}
+\newcommand \rspec{\textit{Spec }}
+\newcommand \rproj{\textit{Proj }}
+\newcommand \stor{\textit{Tor}}
+\newcommand \shom{\textit{Hom}}
+\newcommand \sext{\textit{Ext}}
+\newcommand \mg{{\mathscr M_g}}
+\newcommand \minhilb[2]{\sch^{\text{scroll}}_{#1, #2}}
+\newcommand \hilb[1]{\sch_{#1}}
+\newcommand \uhilb[1]{\scv_{#1}}
+\newcommand \ci[3]{\sch^{ci}_{#1, #2, #3}}
+\newcommand \scroll[1]{\text{S}_{#1}}
+\newcommand \minhilbsmooth[2]{\sch^{\text{scroll}}_{#1, #2, \text{sm}}}
+\newcommand \minhilbsing[2]{\sch^{scroll}_{#1, #2, sing}}
+\newcommand \broken[2]{\sch^{broken}_{#1, #2}}
+\newcommand \gbundle [2]{\mathbb G (#1, #2)}
+\newcommand \delpezzo [1]{\scd_{#1}}
+\newcommand \hilbdp [1]{\scd_{#1}}
+\newcommand \sing [1]{{#1}^{\text{sing}}}
+\newcommand \smooth [1]{{#1}^{\text{sm}}}
+\newcommand \flag[2]{\sch(#1 \subset #2)}
+\makeatletter
+\newcommand{\customlabel}[2]{%
+   \protected@write \@auxout {}{\string \newlabel {#1}{{#2}{\thepage}{#2}{#1}{}} }%
+   \hypertarget{#1}{#2}
+}
+\DeclareMathOperator\ord{ord}
+\DeclareMathOperator\Hilb{Hilb}
+\DeclareMathOperator\rk{rk}
+\DeclareMathOperator\di{div}
+\DeclareMathOperator\pic{Pic}
+\DeclareMathOperator\lcm{lcm}
+\DeclareMathOperator\rank{rank}
+\DeclareMathOperator\codim{codim}
+\DeclareMathOperator\vol{Vol}
+\DeclareMathOperator\supp{Supp}
+\DeclareMathOperator\hlines{\scl_1}
+\DeclareMathOperator\vlines{\scl_2}
+\DeclareMathOperator\spn{Span}
+\DeclareMathOperator\End{End}
+\DeclareMathOperator\sym{Sym}
+\DeclareMathOperator\pgl{PGL}
+\DeclareMathOperator\blow{Bl}
+\DeclareMathOperator\sat{Sat}
+\DeclareMathOperator\ev{ev}
+\newcommand\bbf{{\mathbb F}}
+\newcommand\bk{{\Bbbk}}
+\newcommand \res[3]{Res_{#1}(#2, #3)}
+
+\setcounter{MaxMatrixCols}{20}
+
+\def\listtodoname{List of Todos}
+\def\listoftodos{\@starttoc{tdo}\listtodoname}
